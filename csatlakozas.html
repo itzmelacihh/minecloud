@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineCloud - Csatlakozás</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="minecloud_logo.png" alt="MineCloud Logo" class="menu-logo"></li>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="csatlakozas.html">Minecraft Letöltése</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="gyik.html">Gyakori Kérdések</a></li>
+                <li><a href="blog.html">Frissítések</a></li>
+                <li><a href="rangok.html">Rangok</a></li>
+                <li class="shop-link"><img src="shop_icon.png" alt="Shop Icon" class="shop-icon"><a href="webshop.html">Webshop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <img src="minecloud_logo.png" alt="MineCloud Logo" class="hero-logo">
+        <h1>Minecraft Letöltése</h1>
+        <p>A szerverünkre csak akkor tudsz csatlakozni, ha letöltesz egy minecraft klienst. Erre mi ajánljuk a TLauncher-t, ha nincs eredetid!</p>
+        <div class="hero-buttons">
+            <button class="btn" onclick="openURL()">TLauncher Kliens</button>
+        </div>
+    </div>
+
+
+    <script>
+        function openURL() {
+            window.open('https://tlauncher.org/en/', '_blank'); // Cseréld le az 'https://example.com'-ot a kívánt URL-re
+        }
+    </script>
+</body>
+</html>

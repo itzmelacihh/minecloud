@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineCloud - Kapcsolat</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('minecraft_backgroung.png'); /* Cseréld le a háttérkép URL-jét */
+            background-size: cover;
+            background-position: center;
+            color: rgb(173, 34, 34);
+            text-align: center;
+            margin: 0; /* Adj hozzá egy margin: 0; sort */
+            padding: 0; /* Adj hozzá egy padding: 0; sort */
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column; /* Alapértelmezett oszlop elrendezés */
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .social-container {
+            display: flex; /* Flexbox használata a logók egymás melletti elhelyezéséhez */
+            justify-content: center;
+            gap: 50px; /* Közti távolság */
+            margin-top: 30px;
+        }
+
+        .social-item {
+            text-align: center; /* Logó és cím középre igazítása */
+        }
+
+        .btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: rgba(255, 0, 0, 0.7);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Hover effekt */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="minecloud_logo.png" alt="MineCloud Logo" class="menu-logo"></li>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="csatlakozas.html">Minecraft Letöltése</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="gyik.html">Gyakori Kérdések</a></li>
+                <li><a href="blog.html">Frissítések</a></li>
+                <li><a href="rangok.html">Rangok</a></li>
+                <li class="shop-link"><img src="shop_icon.png" alt="Shop Icon" class="shop-icon"><a href="webshop.html">Webshop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <img src="minecloud_logo.png" alt="MineCloud Logo" class="hero-logo">
+        
+        <div class="social-container">
+            <div class="social-item">
+                <img src="tiktok_logo.png" alt="TikTok Logo" class="menu-logo">
+                <h1>TikTok</h1>
+                <button class="btn" onclick="openTikTok()">TikTok Profil</button>
+            </div>
+            <div class="social-item">
+                <img src="discord_logo.png" alt="Discord Logo" class="menu-logo">
+                <h1>Discord</h1>
+                <button class="btn" onclick="openDiscord()">Discord Szerver</button>
+            </div>
+            <div class="social-item">
+                <img src="youtube_logo.png" alt="YouTube Logo" class="menu-logo">
+                <h1>ItzMeLacihh YouTube</h1>
+                <button class="btn" onclick="openYouTube()">YouTube</button>
+            </div>
+            <div class="social-item">
+                <img src="youtube_logo.png" alt="YouTube Logo" class="menu-logo">
+                <h1>Myxcropix YouTube</h1>
+                <button class="btn" onclick="openYouTube()">YouTube</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTikTok() {
+            window.open('https://www.tiktok.com/@minecloudhungary', '_blank'); // Cseréld le a TikTok URL-jét
+        }
+        
+        function openDiscord() {
+            window.open('https://discord.gg/RPxUrn29YU', '_blank'); // Cseréld le a Discord URL-jét
+        }
+
+        function openYouTube() {
+            window.open('https://www.youtube.com/@itzmelacihh', '_blank'); // Cseréld le a YouTube URL-jét
+        }
+
+        function openYouTube() {
+            window.open('https://www.youtube.com/@myxcropix', '_blank'); // Cseréld le a YouTube URL-jét
+        }
+    </script>
+</body>
+</html>

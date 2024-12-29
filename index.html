@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineCloud - Kezdőlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="minecloud_logo.png" alt="MineCloud Logo" class="menu-logo"></li>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="csatlakozas.html">Minecraft Letöltése</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="gyik.html">Gyakori Kérdések</a></li>
+                <li><a href="blog.html">Frissítések</a></li>
+                <li><a href="rangok.html">Rangok</a></li>
+                <li class="shop-link"><img src="shop_icon.png" alt="Shop Icon" class="shop-icon"><a href="webshop.html">Webshop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <img src="minecloud_logo.png" alt="MineCloud Logo" class="hero-logo">
+        <h1>Csatlakozz a MineCloud szerverhez!</h1>
+        <p>Másold ki az IP címet, és irány a végtelen kalandok tárháza Magyarország egyik legizgalmasabb minecraft szerverén, 1.20.1-es verzióban!</p>
+        <div class="hero-buttons">
+            <button onclick="copyToClipboard()" class="btn">IP Cím kimásolása</button>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const text = "minecloudhun.funserver.top";
+            const tempInput = document.createElement('input');
+            document.body.appendChild(tempInput);
+            tempInput.value = text;
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert("A szöveg kimásolva: " + text);
+        }
+    </script>
+</body>
+</html>

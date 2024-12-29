@@ -1,0 +1,170 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('minecraft_background.png') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px) brightness(50%); /* Homályosítás és sötétítés */
+    z-index: -1; /* A háttér a szöveg mögött legyen */
+}
+
+.hero-logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.rang-logo {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #6e95e9;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3600fa;
+}
+
+/* Alap stílusok a menühöz */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+
+ul li {
+    padding: 14px 16px;
+    color: white;
+}
+
+/* Webshop gomb a jobb szélre igazítása */
+ul li.shop-link {
+    margin-left: auto; /* Ez mozgatja a webshop gombot a sor végére */
+    display: flex;
+    align-items: center;
+}
+
+/* Shop ikon méretezése */
+ul li img.shop-icon {
+    height: 30px;
+    margin-right: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Hero szekció stílus */
+.hero-section {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+/* Alap szöveg stílus a menüben */
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold; /* Szöveg vastagítása */
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7), /* Aqua ragyogó hatás */
+                 0 0 10px rgba(0, 255, 255, 0.5), 
+                 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: text-shadow 0.3s ease; /* Animált hatás, ha a szöveg megváltozik */
+}
+
+/* Hover effektus - amikor az egér fölé viszi a felhasználó */
+ul li a:hover {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.9), /* Intenzívebb ragyogás, amikor az egér fölötte van */
+                 0 0 20px rgba(0, 255, 255, 0.7),
+                 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.clickable-text {
+    color: rgb(151, 151, 151); /* Alapértelmezett szín: lila */
+    text-decoration: underline; /* Eltávolítja az aláhúzást */
+}
+
+.clickable-text:hover {
+    color: rgb(53, 53, 53); /* Egeret ráhúzva szürkére vált */
+}
